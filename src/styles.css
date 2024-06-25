@@ -1,0 +1,147 @@
+/* ----- generic setup stuff ----- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 16px 0px;
+}
+
+/* ----- importing custom fonts ----- */
+
+@font-face {
+  font-family: "Orienta"; /*a name to be used later*/
+  src: url("./fonts/Orienta-Regular.ttf"); /*URL to font*/
+}
+
+/* ----- Complaint form ----- */
+
+.complaint-form-container {
+  height: 1000%;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.complaint-form-title {
+  font-size: 20px;
+  font-family: "Orienta";
+  padding-top: 1vh;
+  padding-bottom: 3vh;
+  /* text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: solid;
+  text-decoration-thickness: 8%; */
+}
+
+.form-element {
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-family: "orienta";
+  margin-bottom: 20px;
+}
+
+.form-element label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-family: "orienta";
+}
+
+.form-element input {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: "orienta";
+}
+
+.form-element textarea {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: "orienta";
+}
+
+.form-element select {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: "orienta";
+}
+
+
+.btn-submit-complaint {
+  background-color: white;
+  border: 2px solid #04AA6D;
+  color: black;
+  border-radius: 8px;
+  padding: 8px 14px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "orienta";
+  margin: 22px 55px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn-submit-complaint:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.success-msg {
+  font-size: 15px;
+  font-family: "Orienta";
+  padding-top: 1vh;
+  padding-bottom: 3vh;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, rgb(104, 208, 232), rgb(231, 144, 245), magenta );
+  background-size: 400% 400%;
+  animation: animate 2s linear 0s 1 forwards;
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0 0 ;
+  }
+  25%{
+    background-position: 100% 0 ;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  75%{
+    background-position: 0 100% ;
+  }
+  100%{
+    background-position: 0 0 ;
+    color: black;
+  }
+}
