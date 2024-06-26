@@ -82,7 +82,7 @@ export default function ComplaintForm() {
         </div>
 
         <div className="form-element">
-          <label>Address:</label>
+          <label> Address, Postcode: </label>
           <input
             type="text"
             required
