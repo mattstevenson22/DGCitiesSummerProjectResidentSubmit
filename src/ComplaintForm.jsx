@@ -30,7 +30,7 @@ export default function ComplaintForm() {
     setIsPending(true);
     setSuccess(false);
 
-    fetch("http://146.169.141.166:5000/submit", {
+    fetch("http://[backendipaddress]/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(complaint),
